@@ -155,7 +155,7 @@ app.layout = html.Div(children=[
 def get_graph(chart, year, children1, children2, c3, c4, c5):
       
         # Select data
-        df =  airline_data[airline_data['Year']==int(year)]
+        df =  airline_data[airline_data['Year']==year]
        
         if chart == 'OPT1':
             # Compute required information for creating graph from the data
