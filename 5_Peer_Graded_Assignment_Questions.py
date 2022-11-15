@@ -74,7 +74,7 @@ def compute_data_choice_2(df):
 app.layout = html.Div(children=[ 
                                 # TASK1: Add title to the dashboard
                                 # Enter your code below. Make sure you have correct formatting.
-                                html.H1(children='US Domestic Airline Flights Performance',style={'textAlign': 'left', 'color': '#503D36', 'font-size': 24}),
+                                html.H1(children='US Domestic Airline Flights Performance',style={'textAlign': 'left', 'color': '#000000', 'font-size': 0}),
 
                                 # REVIEW2: Dropdown creation
                                  
@@ -155,7 +155,7 @@ app.layout = html.Div(children=[
 def get_graph(chart, year, children1, children2, c3, c4, c5):
       
         # Select data
-        df =  airline_data[airline_data['Year']==year]
+        df =  airline_data[airline_data['Year']==int(year)]
        
         if chart == 'OPT1':
             # Compute required information for creating graph from the data
